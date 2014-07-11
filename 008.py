@@ -50,14 +50,15 @@ num= '731671765313306249192251196744265747423553491949349\
 
 biggest = 0
 i = 0
-while i < len(num) - 4:
+while i < (len(num) - 4):
     one = int(num[i])
     two = int(num[i+1])
     thr = int(num[i+2])
     fou = int(num[i+3])
     fiv = int(num[i+4])
-    product = one*two*thr*fou*fiv
-    if product > biggest:
+    product = one * two * thr * fou * fiv
+    if biggest < product:
         biggest = product
-    i = i + 1
+    i += (i+1)
+
 print(biggest)
