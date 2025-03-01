@@ -26,6 +26,7 @@ def FindNumbers(amount):
       o.remove(i)
     total += o
     
-  print total
+  print total()
+  return total()
 
 FindNumbers(1000)
